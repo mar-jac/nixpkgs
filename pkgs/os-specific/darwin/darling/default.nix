@@ -14,7 +14,7 @@ stdenv.mkDerivation rec {
       mkdir -p $out/src/OpenDirectory
 
       cd $out
-      tar -xzf $downloadedFile --strip-components=1
+      tar xzf $downloadedFile --strip-components=1
       rm -r $out/src/libm
 
       # If `src/opendirectory` and `src/OpenDirectory` refer to different
